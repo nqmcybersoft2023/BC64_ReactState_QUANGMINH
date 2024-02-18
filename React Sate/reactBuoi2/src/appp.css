@@ -1,0 +1,57 @@
+ .appp {
+  background-image: url(./background.jpg);
+  background-size: cover; /* Đảm bảo background ảnh được kích thước phù hợp với kích thước của container */
+  position: relative; /* Đặt position là relative để các phần tử con có thể sử dụng z-index */
+  z-index: 1; /* Đặt z-index cho background */
+  height: 100vh;
+}
+/* appp.css */
+
+/* CSS cho component App */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./background.jpg ');
+  background-size: cover;
+}
+
+/* CSS cho component GlassesList */
+.glasses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* CSS cho component GlassesItem */
+.glasses-item {
+  margin: 10px;
+}
+
+.glasses-item img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* CSS cho FaceImage */
+.face-container {
+  position: relative;
+}
+
+.face-image {
+  max-width: 80%;
+  height: auto;
+  padding-left: 100px;
+}
+
+.glasses-image {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  max-width: 130px;
+  
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+} 

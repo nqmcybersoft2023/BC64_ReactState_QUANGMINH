@@ -1,0 +1,47 @@
+/* appp.css */
+
+/* CSS cho component App */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Thiết lập chiều cao của app */
+  background-image: url('./background.jpg'); /* Hình nền cho ứng dụng */
+  background-size: cover; /* Kích thước hình nền sẽ được điều chỉnh sao cho nó vừa với container */
+}
+
+/* CSS cho component GlassesList */
+.glasses-container {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ chỗ */
+  justify-content: center;
+}
+
+/* CSS cho component GlassesItem */
+.glasses-item {
+  margin: 10px; /* Khoảng cách giữa các mẫu kính */
+}
+
+.glasses-item img {
+  width: 100px; /* Chiều rộng của hình ảnh kính */
+  height: auto; /* Chiều cao tự động theo tỉ lệ của chiều rộng */
+  cursor: pointer; /* Con trỏ chuột sẽ biến thành pointer khi di chuột qua */
+}
+
+/* CSS cho FaceImage */
+.face-container {
+  position: relative; /* Thiết lập position để các phần tử con có thể thực hiện các phép biến đổi tương đối */
+}
+
+.face-image {
+  max-width: 100%; /* Đảm bảo hình ảnh khuôn mặt không vượt quá kích thước của container */
+  height: auto; /* Chiều cao tự động theo tỉ lệ của chiều rộng */
+}
+
+.glasses-image {
+  position: absolute; /* Thiết lập position để có thể căn chỉnh vị trí của ảnh kính */
+  top: 50%; /* Đặt top ở giữa theo chiều dọc */
+  left: 50%; /* Đặt left ở giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Dịch chuyển ảnh kính đi -50% theo cả chiều ngang và chiều dọc để căn giữa */
+  pointer-events: none; /* Không cho phép ảnh kính chiếm sự kiện click */
+}
